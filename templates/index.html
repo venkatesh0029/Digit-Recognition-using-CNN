@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handwritten Digit Recognition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Handwritten Digit Recognition</h1>
+        <p>Upload an image of a handwritten digit (0-9) and click Predict.</p>
+
+        <form method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".png,.jpg,.jpeg" required>
+            <button type="submit">Predict</button>
+        </form>
+
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <div class="error">
+            {% for message in messages %}
+            <p>{{ message }}</p>
+            {% endfor %}
+        </div>
+        {% endif %}
+        {% endwith %}
+
+        {% if prediction is not none %}
+        <div class="result">
+            <h2>Prediction: {{ prediction }}</h2>
+            <div class="image-container">
+                {% if image_path %}
+                <div class="image-box">
+                    <p>Uploaded Image:</p>
+                    <img src="{{ url_for('static', filename=image_path) }}" alt="Uploaded Image">
+                </div>
+                {% endif %}
+                {% if processed_image_path %}
+                <div class="image-box">
+                    <p>Processed Image (28x28):</p>
+                    <img src="{{ url_for('static', filename=processed_image_path) }}" alt="Processed Image">
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</body>
+
+</html>
