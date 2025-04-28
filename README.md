@@ -1,77 +1,67 @@
 Digit Recognition using CNN
-This project implements a Convolutional Neural Network (CNN) to recognize handwritten digits from the MNIST dataset. The model is trained to classify grayscale images of digits (0–9) with high accuracy.​
+This project implements a Convolutional Neural Network (CNN) to recognize handwritten digits from the MNIST dataset.
 
 Features
-Utilizes TensorFlow and Keras for building and training the CNN model.
+Built using TensorFlow and Keras
 
-Achieves high accuracy on the MNIST test dataset.
+High accuracy on MNIST handwritten digits
 
-Includes data preprocessing, model training, evaluation, and prediction steps.​
+Includes training, evaluation, and prediction scripts
 
 Dataset
-The project uses the MNIST dataset, which consists of 60,000 training images and 10,000 testing images of handwritten digits.​
+MNIST Dataset
+60,000 training images + 10,000 testing images of handwritten digits (0–9).
 
 Installation
-Clone the repository:
-
 bash
 Copy
 Edit
+# Clone the repository
 git clone https://github.com/venkatesh0029/Digit-Recognition-using-CNN.git
 cd Digit-Recognition-using-CNN
-Create a virtual environment (optional but recommended):
 
-bash
-Copy
-Edit
+# (Optional) Create a virtual environment
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-Install the required packages:
+source venv/bin/activate    # On Windows: venv\Scripts\activate
 
-bash
-Copy
-Edit
+# Install dependencies
 pip install -r requirements.txt
 Usage
-Train the model:
-
+1. Train the Model
 bash
 Copy
 Edit
 python train.py
-This script will load the MNIST dataset, preprocess the data, define the CNN architecture, train the model, and save the trained model to disk.
+This will train the CNN on the MNIST dataset and save the trained model.
 
-Evaluate the model:
-
+2. Evaluate the Model
 bash
 Copy
 Edit
 python evaluate.py
-This script will load the saved model and evaluate its performance on the test dataset.
+This will load the trained model and evaluate it on the test data.
 
-Make predictions:
-
+3. Make Predictions
 bash
 Copy
 Edit
-python predict.py path_to_image
-Replace path_to_image with the path to a grayscale image of a handwritten digit. The script will output the predicted digit.
+python predict.py path_to_your_image
+Replace path_to_your_image with the path of a digit image you want to predict.
 
 Model Architecture
-The CNN model consists of the following layers:​
-
 Convolutional layers with ReLU activation
 
 MaxPooling layers
 
-Dropout layers to prevent overfitting
+Dropout layers to reduce overfitting
 
-Fully connected (Dense) layers
+Dense (Fully Connected) layers
 
-Output layer with softmax activation for classification​
+Output Softmax layer (10 classes: digits 0–9)
 
 Results
-After training, the model achieves an accuracy of approximately 99% on the MNIST test dataset.​
+Achieved about 99% accuracy on the MNIST test dataset.
 
 License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License.
+
