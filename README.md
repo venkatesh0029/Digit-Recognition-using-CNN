@@ -1,21 +1,21 @@
-#Digit Recognition using CNN
+# Digit Recognition using CNN
+
 This project implements a Convolutional Neural Network (CNN) to recognize handwritten digits from the MNIST dataset.
 
-Features
-Built using TensorFlow and Keras
+## Features
 
-High accuracy on MNIST handwritten digits
+- Built using TensorFlow and Keras
+- High accuracy on MNIST handwritten digits
+- Includes training, evaluation, and prediction scripts
 
-Includes training, evaluation, and prediction scripts
+## Dataset
 
-Dataset
-MNIST Dataset
-60,000 training images + 10,000 testing images of handwritten digits (0–9).
+- **MNIST Dataset**  
+  60,000 training images + 10,000 testing images of handwritten digits (0–9).
 
-Installation
-bash
-Copy
-Edit
+## Installation
+
+```bash
 # Clone the repository
 git clone https://github.com/venkatesh0029/Digit-Recognition-using-CNN.git
 cd Digit-Recognition-using-CNN
@@ -64,4 +64,30 @@ Achieved about 99% accuracy on the MNIST test dataset.
 
 License
 This project is licensed under the MIT License.
+
+yaml
+Copy
+Edit
+
+---
+
+✅ **How to use:**  
+- Copy everything from **`# Digit Recognition using CNN`** down to the end.
+- Paste it into a new file called `README.md` inside your project folder.
+- Commit and push to GitHub.
+
+GitHub will automatically show it with beautiful formatting!
+
+---
+
+Would you also like a second version that's even a bit cooler, like with badges (Python | TensorFlow | License badges)? 🚀✨  
+(Useful if you want your project to look more professional.)
+
+
+
+
+
+
+
+
 
