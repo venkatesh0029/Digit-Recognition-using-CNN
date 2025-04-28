@@ -1,4 +1,4 @@
-Digit Recognition using CNN
+#Digit Recognition using CNN
 This project implements a Convolutional Neural Network (CNN) to recognize handwritten digits from the MNIST dataset.
 
 Features
