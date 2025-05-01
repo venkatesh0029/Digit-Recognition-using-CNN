@@ -1,4 +1,4 @@
-import os
+import os;
 import numpy as np
 import cv2
 from flask import Flask, request, render_template, flash, redirect, url_for
